@@ -1,0 +1,241 @@
+/* font for my name */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+header span {
+  position:relative;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #cf1b1b;
+  font-size: 50px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+header span::before {
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    rgb(31, 137, 29) 2px,
+    rgb(31, 137, 29) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+header span::after {
+  content: "Randy Einfalt";
+  position:fixed;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    rgb(31, 137, 29) 2px,
+    rgb(31, 137, 29) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+header span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+header span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px;
+    flex: 0 0 300px;
+    margin: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+
+header h1 {
+    color: red;
+    text-align: left;
+    display: inline-block;
+    font-size: 48px;
+    background-color: aqua;
+    font-style:normal;
+    font-family:monospace
+}
+
+header h1:hover {
+    background-color: darkseagreen;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float:right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: aqua;
+}
+
+header nav ul li {
+	padding: 12px 6px;
+	text-decoration: none;
+	line-height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  display: inline-block;
+  list-style-type:none;
+  background-color: aqua;
+  
+}
+
+header nav ul li a:hover {
+    background-color: coral;
+}
+
+header nav ul li a {
+    background-color: aqua;
+
+}
+nav a {
+    text-align: right;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    
+}
+/* poor flex attempt */
+.main {
+  margin: 20px 200px 200px 200px; 
+  align-items: flex-start;
+  width: 80%;
+}
+/* profile pic */
+.picture {
+    padding: 20px 40px 40px;
+    max-width: 700px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0 100px 100px 100px;
+    padding-bottom: 50px;
+}
+
+.picture_time {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 30px 30px 30px 0;
+    float: left;
+    border: 3px black solid;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: green;
+    text-align: center;
+}
+
+h4 {
+    margin: auto;
+    text-align: center;
+}
+
+section p1 {
+    font-size: 25px;
+    
+}
+
+.Contact {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* contact form */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing:border-box; 
+    margin-top: 6px; 
+    margin-bottom: 12px; 
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:gray;
+  }
+
+  .contact-list-class {
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(57, 135, 213);
+    color: white;
+    text-align: center;
+    padding: 0;
+  }
+
+
+/* more poor flex attempts */
+@media screen and (max-width: 900px) {
+    .main {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+        .main {
+          width: 100%;
+        }
+  }
