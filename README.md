@@ -27,7 +27,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 
-![](assets/Screenshot%20(1).png)
+Screenshot (1).png
 
 
 
