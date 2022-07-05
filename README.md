@@ -27,7 +27,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 
-Screenshot (1).png
+![Screenshot (1)](https://user-images.githubusercontent.com/107439535/177402167-4ba83f15-8afd-4bed-89c9-77ed5eacc00b.png)
+
 
 
 
